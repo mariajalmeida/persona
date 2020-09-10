@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background: #1b1b1b;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Syncopate', sans-serif;
+}
+
+/* left section */
+
+.profile {
+    background: #677381;
+    border-radius: 20px;
+}
+
+.name h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Kufam', cursive;
+    margin-bottom: 0;
+}
+
+.profile_photo {
+    text-align: center;
+}
+
+.profile_photo img {
+    max-width: 300px;
+    border: 8px solid brown;
+    border-radius: 20px;
+}
+
+.keywords {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 8px 0;
+}
+
+.keywords p {
+    margin: 0 8px;
+    background-color: slategray;
+    padding: 5px 8px;
+}
+
+/* common */
+
+.item2,
+.item3,
+.item1 {
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* middle section */
+
+.likesanddislikes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* right section */
+
+.bartop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 4px 6px;
+    background-color: darkslategrey;
+    border-radius: 4px;
+}
+
+.bartop .ball {
+    grid-column: 8/9;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 20px;
+}
+
+
+.ball2 {
+    grid-column: 2/3;
+    width: 100%;
+    height: 20px;
+    background-color: darkgoldenrod;
+}
+
+
+.traits h3 {
+    font-size: 15px;
+}
+
+.bar,
+.bar2,
+.bar3 {
+    display: flex;
+    padding: 4px 6px;
+    background-color: darkslategrey;
+    border-radius: 4px;
+}
+
+.bar .ball {
+    background-color: darkgoldenrod;
+    width: 10%;
+    height: 20px;
+}
+
+.bar2 .ball {
+    background-color: darkgoldenrod;
+    width: 15%;
+    height: 20px;
+}
+
+.bar3 .ball {
+    background-color: darkgoldenrod;
+    width: 18%;
+    height: 20px;
+}
+
+.platforms {
+    text-align: center;
+}
+
+.platforms img {
+    max-height: 50px;
+    margin: 5px 10px;
+}
