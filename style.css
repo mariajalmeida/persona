@@ -201,13 +201,9 @@ li {
 .item3 > div {
     padding: 20px;
     margin: 10px;
-    -webkit-box-shadow: 0px 0px 29px 0px rgba(222, 222, 222, 1);
-    -moz-box-shadow: 0px 0px 29px 0px rgba(222, 222, 222, 1);
-    box-shadow: 0px 0px 29px 0px rgba(222, 222, 222, 1);
     background: rgb(147, 162, 177);
 }
 
-
-.details h3 {
-    margin-top: 20px;
+h3 {
+    margin-top: 15px;
 }
