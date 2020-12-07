@@ -199,11 +199,20 @@ li {
 .item2 > div,
 .item1 > div:not(.profile),
 .item3 > div {
-    padding: 20px;
+    padding: 20px 30px 30px 30px;
     margin: 10px;
+    margin-top: 20px;
     background: rgb(147, 162, 177);
 }
 
+.professional_background {
+    height: 530px;
+}
+
+.hesitations {
+    height: 285px;
+}
+
 h3 {
-    margin-top: 15px;
+    margin-top: 10px;
 }
