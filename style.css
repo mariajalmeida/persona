@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 img {
@@ -17,11 +17,14 @@ body {
     color: #202020;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .grid {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -51,8 +54,8 @@ header h1 {
 
 .profile_photo img {
     max-width: 300px;
-    border: 8px solid #202020;
-    border-radius: 5px;
+    border: 8px ridge #005fad9d;
+    border-radius: 2px;
     display: flex;
     margin: auto;
 }
@@ -91,10 +94,19 @@ h3 {
     margin: 0px auto;
     margin-bottom: 0;
     position: relative;
-    font-weight: 600;
+    font-weight: 800;
 }
 
-h3::before {
+ul,
+p {
+    margin-top: 6px;
+}
+
+.item3 p {
+    margin-bottom: 2px;
+}
+
+/* h3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -114,7 +126,7 @@ h3::after {
     height: 2px;
     background: black;
     color: aqua;
-}
+} */
 
 
 p,
@@ -141,7 +153,7 @@ li {
     grid-template-columns: repeat(12, 1fr);
     padding: 4px 6px;
     background-color: darkslategrey;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .bartop .ball {
@@ -163,16 +175,28 @@ li {
 .bar2,
 .bar3,
 .bar4,
-.bar5 {
+.bar5,
+.bar6 {
     display: flex;
     padding: 4px 6px;
     background-color: darkslategrey;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .ball {
     background-color: darkgoldenrod;
     height: 20px;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    max-width: 45%;
+    object-fit: contain;
+    margin: 10px;
 }
 
 /* ADAPT HERE BARS */
@@ -196,21 +220,17 @@ li {
     width: 90%;
 }
 
-.item2 > div,
-.item1 > div:not(.profile),
-.item3 > div {
+.bar6 .ball {
+    width: 95%;
+}
+
+.item2>div,
+.item1>div:not(.profile),
+.item3>div {
     padding: 20px 30px 30px 30px;
     margin: 10px;
     margin-top: 20px;
     background: rgb(147, 162, 177);
-}
-
-.professional_background {
-    height: 530px;
-}
-
-.hesitations {
-    height: 285px;
 }
 
 h3 {
